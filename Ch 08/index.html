@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Fun with HTML5 Canvas | Challenge 08</title>
+</head>
+<body>
+    <div class="content">
+        <div class="color">
+            <label> <input onchange="checkInput(this)" type="radio" name="color" value="#432f8a"> </label>
+            <label> <input onchange="checkInput(this)" type="radio" name="color" value="#118ec5"> </label>
+            <label> <input onchange="checkInput(this)" type="radio" name="color" value="#5da842"> </label>
+            <label> <input onchange="checkInput(this)" type="radio" name="color" value="#9e1d45"> </label>
+            <label> <input onchange="checkInput(this)" type="radio" name="color" value="#ed931d"> </label>
+            <label> <input onclick="checkInput(this)" oninput="checkInput(this)" name="color" type="color" id="picker"> </label>
+        </div>
+        <div class="canvas">
+            <canvas id="canvas"></canvas>
+            <button onclick="clearCanvas()">Clear</button>
+            <button onclick="saveCanvas()">Save</button>
+        </div>
+        <div class="size">
+            <label> <input onchange="checkInput(this)" type="radio" name="size" value="pressure"> <img src="pressure.png"> </label>
+            <label> <input onchange="checkInput(this)" type="radio" name="size" value="big"> </label>
+            <label> <input onchange="checkInput(this)" type="radio" name="size" value="medium"> </label>
+            <label> <input onchange="checkInput(this)" type="radio" name="size" value="small"> </label>
+            <label> <input onchange="checkInput(this)" type="radio" name="size" value="random"> <img src="random.png"> </label>
+        </div>
+    </div>
+    <div class="contact">
+        <style>
+            .contact{
+                width: 190px; height: 40px; background-color: white;
+                display: flex; flex-direction: row; flex-wrap: nowrap;
+                justify-content: space-evenly; align-items: center;
+                border-radius: 35px; padding: 5px; filter: brightness(90%);
+                position: absolute; bottom: 10px; left: 130px;
+            }
+        </style>
+        <a href="https://codepen.io/ahmdmznaty" target="_blank"><img src="../social/codepen.png"></a>
+        <a href="https://www.facebook.com/ahmdmznaty" target="_blank"><img src="../social/facebook.png"></a>
+        <a href="https://github.com/ahmdmznaty" target="_blank"><img src="../social/github.png"></a>
+        <a href="https://linkedin.com/in/ahmdmznaty/" target="_blank"><img src="../social/linkedin.png"></a>
+        <a href="https://stackoverflow.com/users/20708566" target="_blank"><img src="../social/stackoverflow.png"></a>
+    </div>
+</body>
+</html>

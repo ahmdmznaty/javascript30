@@ -1,0 +1,123 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+body{ background-color: #ddd; }
+
+.content{
+    width: 100%; height: 100%;
+    position: fixed; left: 0; top: 0;
+    display: flex; flex-direction: row;
+    flex-wrap: nowrap;
+}
+.content .color{
+    width: 120px; height: 100%;
+    border-right: 4px solid #666;
+    display: flex; flex-direction: column;
+    flex-wrap: nowrap; justify-content: space-evenly;
+    align-items: center; align-content: space-evenly;
+}
+.content .canvas{
+    width: calc(100% - 240px); height: 100%;
+    background-color: white;
+    position: relative;
+}
+.content .canvas #canvas{
+    width: 100%; height: 100%;
+    cursor: url("pencil.png"),auto;
+    position: absolute; left: 0; top: 0;
+}
+.content .canvas button:first-of-type{
+    width: 90px; height: 40px;
+    background-color: #ad3030;
+    color: white; border: 0;
+    border-radius: 40px;
+    position: absolute;
+    right: 150px; bottom: 30px;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+.content .canvas button:first-of-type:hover{
+    background-color: white; color: #ad3030;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.content .canvas button:last-of-type{
+    width: 90px; height: 40px;
+    background-color: #181817;
+    color: white; border: 0;
+    border-radius: 40px;
+    position: absolute;
+    right: 40px; bottom: 30px;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+.content .canvas button:last-of-type:hover{
+    background-color: white; color: #181817;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.content .size{
+    width: 120px; height: 100%;
+    border-left: 4px solid #666;
+    display: flex; flex-direction: column;
+    flex-wrap: nowrap; justify-content: space-evenly;
+    align-items: center; align-content: space-evenly;
+}
+@media only screen and (max-width: 550px) {
+    .content{ flex-direction: column; }
+    .content .color{ flex-direction: row; width: 100%; height: 80px; border: 0; border-bottom: 4px solid #666; }
+    .content .canvas{ width: 100%; height: calc(100% - 160px); }
+    .content .size{ flex-direction: row; width: 100%; height: 80px; border: 0; border-top: 4px solid #666; }
+}
+
+
+
+
+.content .color label{
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.content .color label#activeColor{
+    border: 4px solid white;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.2);
+}
+.content .color input{ visibility: hidden; transform: scale(0); }
+
+
+
+
+.content .size label{
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+.content .size label#activeSize{
+    border: 4px solid white;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.2);
+}
+.content .size label img{
+    width: 100%; position: absolute; left: 0; top: 0;
+}
+.content .size input{ visibility: hidden; transform: scale(0); }
+
+
+
+
+
+
+
+
+
+
+
+

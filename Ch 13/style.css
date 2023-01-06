@@ -1,0 +1,56 @@
+
+
+body{
+    background-color: #f0f0f0;
+}
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    width: 500px; margin: 40px auto;
+    text-align: center; padding: 30px;
+    background-color: #6f88fc; color: white;
+    border-radius: 6px;
+}
+
+.parent{
+    width: 65%; height: auto; margin: 40px auto;
+    padding: 50px; background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.parent p{
+    font-size: 18px; line-height: 1.5em;
+    color: #555;
+}
+.parent img{
+    transition: all 0.6s;
+    padding: 5px 15px 5px 0;
+    opacity: 0;
+    filter: blur(5px);
+}
+.parent img.left{
+    transform: translate(-30%, 0);
+    float: left;
+}
+.parent img.right{
+    transform: translate(30%, 0);
+    float: right;
+}
+.parent img.active{
+    transform: translate(0, 0);
+    opacity: 1;
+    filter: blur(0);
+}
+
+
+
+
+
+
+
+

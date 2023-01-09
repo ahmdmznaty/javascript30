@@ -1,0 +1,93 @@
+
+
+body{
+    background-color: #6f88fc;
+}
+
+*{
+    padding: 0; margin: 0; box-sizing: border-box; user-select: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tapas{
+    width: 300px; height: 450px; padding: 25px;
+    border-radius: 7px; overflow: hidden;
+    background-color: #fff; margin: 120px auto;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
+    justify-content: space-between; align-items: center;
+}
+
+.tapas h2{
+    color: #333; font-size: 22px;
+}
+
+.tapas .items{
+    width: 100%; height: calc(100% - 80px); padding: 5px;
+    display: flex; flex-direction: column; flex-wrap: nowrap;
+    justify-content: flex-start; align-items: flex-start;
+    overflow-x: hidden; overflow-y: auto; position: relative;
+}
+.tapas .items .loading{
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.tapas .items .loading.hide{ display: none; }
+.tapas .items::-webkit-scrollbar{ width: 2px; }
+.tapas .items::-webkit-scrollbar-track{ width: 2px; background-color: transparent; }
+.tapas .items::-webkit-scrollbar-thumb{ width: 2px; background-color: #6f88fc; }
+.tapas .items label{
+    width: 100%; min-height: 40px; padding: 10px; margin: 5px 0;
+    list-style-type: none; border: 1px solid #6f89fc54;
+    cursor: pointer; border-radius: 3px; color: #555;
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    justify-content: flex-start; align-items: center; gap: 10px;
+    position: relative;
+}
+.tapas .items label input{ width: 15px; height: 15px; }
+.tapas .items label span{
+    position: absolute; width: 100%; height: 100%;
+    z-index: 2; padding-left: 20px;
+    display: flex; flex-direction: row; justify-content: flex-start;
+    align-items: center;
+}
+
+
+.tapas form{
+    width: 100%; height: 40px;
+    display: flex; flex-direction: row;
+    flex-wrap: nowrap; justify-content: center;
+    align-items: center; gap: 5px;
+}
+.tapas form input{
+    width: 70%; height: 100%; padding: 10px;
+    font-size: 15px; border-radius: 3px;
+    border: 1px solid #6f88fc;
+}
+.tapas form input::placeholder{ color: #6f88fc; }
+.tapas form button{
+    width: 30%; height: 100%;
+    border: 0; background-color: #6f88fc;
+    color: white; cursor: pointer;
+    border-radius: 3px; font-size: 15px;
+    transition: all 0.3s;
+}
+.tapas form button:hover{
+    background-color: #fff; color: #6f88fc;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

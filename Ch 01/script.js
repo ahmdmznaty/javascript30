@@ -12,7 +12,7 @@ window.addEventListener("keypress", (event) => {
         activeButton.classList.add("active")
         setTimeout(() => { activeButton.classList.remove("active") }, 50)
         let toneElement = document.createElement("audio")
-        toneElement.src = `sounds/${activeButton.children[1].innerText}.wav`
+        toneElement.src = `sounds/${activeButton.children[1].innerText.toLowerCase()}.wav`
         toneElement.play()
     }
 })
